@@ -1,0 +1,59 @@
+.btn-default:active:focus, .btn-default:active:hover{
+  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.btn:active:focus, .btn:focus{
+  outline: none;
+}
+.my-wrap{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.main{
+  flex-grow: 1;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+.nav-header{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #fcf;
+    padding: 0 10px;
+}
+.nav-header h3{
+    margin: 0;
+    font-weight: bold;
+    color: purple;
+}
+.nav-header button{
+    height:40px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 8px;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  flex-shrink: 0;
+  height: 80px;
+  background-color: #fcf;
+  align-items: center;
+
+}
+
+.footer a{
+  color: 666;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  border-right: 1px solid #fff;
+  flex-grow: 1;
+}
+.footer a:last-child{
+  border: none;
+}

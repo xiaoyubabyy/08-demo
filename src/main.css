@@ -11,6 +11,7 @@
   height: 100vh;
 }
 .main{
+  display: flex;
   flex-grow: 1;
   background-color: #fff;
   overflow-y: scroll;
@@ -21,7 +22,7 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background-color: #fcf;
+    background-color: #E1BEE7;
     padding: 0 10px;
 }
 .nav-header h3{
@@ -41,13 +42,13 @@
   justify-content: space-around;
   flex-shrink: 0;
   height: 80px;
-  background-color: #fcf;
+  background-color: #E1BEE7;
   align-items: center;
 
 }
 
 .footer a{
-  color: 666;
+  color: purple;
   font-size: 18px;
   text-decoration: none;
   text-align: center;
@@ -56,4 +57,87 @@
 }
 .footer a:last-child{
   border: none;
+}
+.home-wrap{
+  display: flex;
+  flex-grow: 1;
+  background-image: url(./images/psb.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.home-hover{
+  display: flex;
+  flex-grow: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+.home-item{
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 28pxc;
+}
+.about-wrap{
+  flex-grow: 1;
+  padding: 10px;
+  color: #E1BEE7
+}
+.git-card{
+  width: 100%;
+  text-align: center;
+  box-shadow: rgba(0,0,0,0.3) 3px 3px 6px;
+  padding:10px
+
+}
+.about-form{
+  margin: 0 auto;
+  display: inline;
+  width: 90%;
+  max-width: 90%
+}
+.show-git{
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.5);
+  justify-content: space-around;
+  font-size: 18px
+}
+.show-git p{
+  color: #607D8B;
+}
+.blog-card{
+  border: 1px solid #fff;
+  padding: 0 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  max-width: 750px;
+
+}
+.blog-wrap{
+  flex-grow: 1;
+  margin-top: 10px;
+}
+.blog-index{
+  background-color: #E1BEE7;
+  font-size: 24px;
+  text-align: center;
+  height: 40px;
+}
+.blog-index span{
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+.blog-content{
+  box-shadow: rgba(0,0,0,0.5) 1px 2px 6px;
+  padding: 10px;
+  color: #666;
+}
+.blog-content h3{
+  margin: 10px 0;
+}
+.blog-content button{
+
 }

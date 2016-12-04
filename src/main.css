@@ -10,6 +10,24 @@
   flex-direction: column;
   height: 100vh;
 }
+@media(min-width:760px){
+  .my-wrap{
+    flex-direction:row;
+    }
+  }
+.leftnav-wrap{
+    width: 260px;
+    background-color: #E1BEE7;
+    text-align: center;
+
+}
+.leftnav-wrap a{
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
 .main{
   display: flex;
   flex-grow: 1;
@@ -61,7 +79,7 @@
 .home-wrap{
   display: flex;
   flex-grow: 1;
-  background-image: url(./images/psb.jpg);
+  background-image: url(./images/dd.jpg);
   background-size: cover;
   background-position: 50% 50%;
 }

@@ -3,7 +3,7 @@ import CircularProgress from 'material-ui/CircularProgress';
 class Loading extends React.Component {
   render () {
     return(
-      <div>
+      <div style={{textAlign:'center'}}>
       <CircularProgress color=" #E1BEE7"/>
       </div>
     )

@@ -12,15 +12,18 @@ class Item extends React.Component {
   }
   componentDidMount(){
     let address = this.props.params.title;
-    axios.get
+    axios.get(`https://github.com/xiaoyubabyy/08-demo/tree/master/data/${address}.md`)
+    .then(res => this.setState({data:res.data}))
+    .catch( err => alert(err))
   }
   render () {
-    let content = this.props.params.title==0?'第一个':
-                  this.props.params.title==1?'第二个':
-                  this.props.params.title==2?'第三个':'第n个'
     return(
-      <div>
-      {content}
+      <div className='item-wrap'>
+        {
+          this.state.data.length==0?<Loading />:
+            <div dangerouslySetInnerHTML={{__html:marked(this.state.data)}}/>
+        }
+
       </div>
     )
   }

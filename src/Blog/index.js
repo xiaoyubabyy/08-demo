@@ -11,7 +11,7 @@ class Blog extends React.Component {
     }
   }
   componentDidMount(){
-    axios.get('https://raw.githubusercontent.com/xiaoyubabyy/08-demo/master/data/blogcard.json')
+    axios.get('https://raw.githubusercontent.com/xiaoyubabyy/08-demo/master/data/blogcard.json?aa=aa')
     .then( res =>this.setState({data:res.data,wait:false}))
   }
   render () {

@@ -4,7 +4,7 @@ class NoMatch extends React.Component {
   render () {
     return(
       <div >
-      ffff
+      页面不存在
       </div>
     )
   }
